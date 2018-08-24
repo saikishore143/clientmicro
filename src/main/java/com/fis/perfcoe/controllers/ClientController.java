@@ -19,9 +19,8 @@ import com.fis.perfcoe.models.UserDTO;
 @RequestMapping("/api")
 @CrossOrigin("*")
 public class ClientController {
-	   @Autowired
-
-	    private RestTemplate restTemplate;
+	@Autowired
+	private RestTemplate restTemplate;
 
 	@GetMapping("/getgreeting")
 	public UserDTO greeting1() {
