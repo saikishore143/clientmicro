@@ -23,7 +23,7 @@ public class ClientController {
 	private RestTemplate restTemplate;
 
 	@GetMapping("/getgreeting")
-	public UserDTO greeting1() {
+	public CrudDTO greeting1() {
 		 String url = "http://microservice1-perfcoe-microservice.sdlocpapp.fisdev.local/api/greeting";
 	        System.out.println("URL" + url);
 	        
