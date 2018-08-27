@@ -12,7 +12,7 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Random;
 
-import com.fis.perfcoe.models.UserDTO;
+import com.fis.perfcoe.models.CrudDTO;
 
 
 @RestController
@@ -27,7 +27,7 @@ public class ClientController {
 		 String url = "http://microservice1-perfcoe-microservice.sdlocpapp.fisdev.local/api/greeting";
 	        System.out.println("URL" + url);
 	        
-	        UserDTO emp = (UserDTO) restTemplate.getForObject(url, UserDTO.class);
+	        CrudDTO  emp = (CrudDTO ) restTemplate.getForObject(url, CrudDTO .class);
 
 	        System.out.println("RESPONSE " + emp);
 
