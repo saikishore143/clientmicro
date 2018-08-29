@@ -27,7 +27,7 @@ public class ClientController {
 		 String url = "http://microservice1-perfcoe-microservice.sdlocpapp.fisdev.local/api/greeting";
 	        System.out.println("URL" + url);
 	        
-	        CrudDTO  emp = (CrudDTO ) restTemplate.getForObject(url, CrudDTO.class);
+	        CrudDTO  emp = (CrudDTO)restTemplate.getForObject(url,CrudDTO.class);
 
 	        System.out.println("RESPONSE " + emp);
 
