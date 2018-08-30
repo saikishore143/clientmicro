@@ -26,7 +26,7 @@ public class ClientController {
 		 String url = "http://microservice1-perfcoe-microservice.sdlocpapp.fisdev.local/api/greeting/name=sai";
 	        System.out.println("URL" + url);
 	        
-	        String  emp = (String)restTemplate.getForEntity(url,String.class);
+	        String  emp = restTemplate.getForEntity(url,String.class);
 
 	        System.out.println("RESPONSE " + emp);
 
