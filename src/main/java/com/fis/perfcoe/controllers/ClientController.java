@@ -6,6 +6,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.http.*;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -26,11 +27,11 @@ public class ClientController {
 		 String url = "http://microservice1-perfcoe-microservice.sdlocpapp.fisdev.local/api/greeting/name=sai";
 	        System.out.println("URL" + url);
 	        
-	        String  emp = restTemplate.getForEntity(url,String.class);
+	         ResponseEntity<String>  emp = restTemplate.getForEntity(url,String.class);
 
 	        System.out.println("RESPONSE " + emp);
 
-	        return emp;
+	        return "sai";
 
 	}
 
