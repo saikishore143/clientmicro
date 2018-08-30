@@ -24,7 +24,7 @@ public class ClientController {
 
 	@GetMapping("/getgreeting")
 	public String greeting1() {
-		 String url = "http://microservice1-perfcoe-microservice.sdlocpapp.fisdev.local/api/greeting/name=sai";
+		 String url = "http://microservice1-perfcoe-microservice.sdlocpapp.fisdev.local/api/greeting?name=sai";
 	        System.out.println("URL" + url);
 	        
 	         ResponseEntity<String>  emp = restTemplate.getForEntity(url,String.class);
