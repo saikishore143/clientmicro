@@ -19,7 +19,7 @@ import java.util.Random;
 @RequestMapping("/api")
 @CrossOrigin("*")
 public class ClientController {
-	@Autowired
+	
 	private RestTemplate restTemplate;
 
 	@GetMapping("/getgreeting")
