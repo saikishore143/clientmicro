@@ -19,7 +19,7 @@ import java.util.Random;
 
 public class ClientController {
 	
-	private RestTemplate restTemplate;
+	private RestTemplate restTemplate=new RestTemplate();
 
 	@GetMapping("/getgreeting")
 	public String greeting1() {
