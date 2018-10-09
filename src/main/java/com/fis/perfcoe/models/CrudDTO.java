@@ -1,9 +1,18 @@
 package com.fis.perfcoe.models;
+import java.util.List;
+import java.io.Serializable;
+import com.fasterxml.jackson.annotation.*;
 
-public class CrudDTO {
-	
-	
+@JsonIgnoreProperties(ignoreUnknown=true)
+public class CrudDTO implements Serializable{
+	public CrudDTO()
+	{
+		
+	}
+	@JsonProperty("Name")
 	private String name;
+	@JsonProperty("Surname")
+	private String surname;
 	public String getName() {
 		return name;
 	}
@@ -16,7 +25,5 @@ public class CrudDTO {
 	public void setSurname(String surname) {
 		this.surname = surname;
 	}
-	private String surname;
-	
 	
 }
