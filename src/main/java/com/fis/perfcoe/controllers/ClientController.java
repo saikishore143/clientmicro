@@ -23,7 +23,7 @@ public class ClientController {
 
 	@GetMapping("/getgreeting")
 	public String greeting1() {
-		String url = "http://10.45.147.243:8080/api/greeting";
+		String url = "http://microservice-perf-coe.devapps.fisdev.local/api/greeting";
 	        System.out.println("URL" + url);
 	        //ResponseEntity<String>  emp = restTemplate.getForEntity(url,String.class);
 		  String emp = restTemplate.getForObject(url,String.class);
