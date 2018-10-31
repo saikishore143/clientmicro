@@ -33,7 +33,7 @@ public class ClientController {
 	        //ResponseEntity<String>  emp = restTemplate.getForEntity(url,String.class);
 		 // String emp = restTemplate.getForObject(url,String.class);
 	        //System.out.println("RESPONSE " + emp);
-		ResponseEntity<String> res = restTemplate.exchange(url, HttpMethod.GET, entity, Object.class);
+		ResponseEntity<Object> res = restTemplate.exchange(url, HttpMethod.GET, entity, Object.class);
        	       // System.out.println(res);
 	        return "sai";
 
